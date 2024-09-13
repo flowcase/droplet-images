@@ -25,8 +25,6 @@ COPY ./src/ubuntu/install/nessus/custom_startup.sh $STARTUPDIR/custom_startup.sh
 RUN chmod +x $STARTUPDIR/custom_startup.sh
 RUN chmod 755 $STARTUPDIR/custom_startup.sh
 
-RUN cp /usr/share/backgrounds/bg_kasm.png /usr/share/backgrounds/bg_default.png
-
 ######### End Customizations ###########
 
 RUN chown 1000:0 $HOME
